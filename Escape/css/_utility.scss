@@ -1,0 +1,16 @@
+/* 폰트 */
+$noto: "Noto Sans KR", sans-serif !important;
+
+@mixin font($weight, $size, $color) {
+  font-family: $noto;
+	font-weight: $weight;
+	font-size: $size;
+	color: $color;
+}
+
+/* 버튼 */
+@mixin btn($color){
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background-color: $color;
+}
