@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* 폰트 */
+/* 컬러 */
+/* 단서 */
 /* 버튼 */
 /* 시작페이지 */
 .title {
@@ -19,19 +21,31 @@
   margin-top: 110px;
 }
 .btn_wrap .btn {
-  display: block;
-  width: 400px;
-  height: 100px;
-  margin: 0 auto;
-  border-radius: 200px;
-  background-color: rgba(78, 78, 78, 0.8);
-  text-align: center;
-  font-size: 60px;
-  color: #fff;
-  font-weight: bold;
   transition: 0.3s;
 }
 .btn_wrap .btn:hover {
   box-shadow: 0 0 20px 20px rgba(240, 255, 63, 0.8);
   color: #F0FF3F;
+}
+
+/* 입장 */
+.inner .tit {
+  padding-top: 150px;
+  font-size: 80px;
+}
+.inner .input_wrap {
+  margin-top: 80px;
+}
+.inner .input_wrap .nick {
+  width: 700px;
+  height: 100px;
+}
+.inner .input_wrap .nick::-moz-placeholder {
+  font-size: 24px;
+}
+.inner .input_wrap .nick::placeholder {
+  font-size: 24px;
+}
+.inner .btn_wrap {
+  margin-top: 60px;
 }

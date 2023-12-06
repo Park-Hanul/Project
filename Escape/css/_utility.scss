@@ -8,9 +8,24 @@ $noto: "Noto Sans KR", sans-serif !important;
 	color: $color;
 }
 
-/* 버튼 */
-@mixin btn($color){
+/* 컬러 */
+$main_color: #F0FF3F;
+$sub_color: #458FFF;
+
+/* 단서 */
+@mixin clue($color){
   width: 24px; height: 24px;
   border-radius: 50%;
   background-color: $color;
+}
+
+/* 버튼 */
+@mixin btn($w, $h, $bg_color, $color){
+  display: block;
+  width: $w; height: $h;
+  background-color: $bg_color;
+  color: $color;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
 }

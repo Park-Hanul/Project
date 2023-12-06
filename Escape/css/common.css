@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* 폰트 */
+/* 컬러 */
+/* 단서 */
 /* 버튼 */
 @font-face {
   font-family: "Cafe24Danjunghae";
@@ -55,6 +57,76 @@ button {
   margin: 0 auto;
 }
 
-.title {
+/* 공통 */
+.title, .tit, .txt {
   text-align: center;
+}
+
+.title, .tit {
+  color: #fff;
+}
+
+.talk {
+  text-align: left;
+  color: #fff;
+  font-size: 40px;
+}
+
+.blind {
+  display: none;
+  font-size: 0;
+  text-indent: -9999em;
+}
+
+.btn_wrap .btn {
+  display: block;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(78, 78, 78, 0.8);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  border-radius: 200px;
+  font-size: 60px;
+}
+
+input[type=text] {
+  display: block;
+  width: 350px;
+  height: 50px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #D9D9D9;
+  border-radius: 6px;
+}
+input[type=text]::-moz-placeholder {
+  font-size: 16px;
+  color: #d9d9d9;
+}
+input[type=text]::placeholder {
+  font-size: 16px;
+  color: #d9d9d9;
+}
+
+.descript {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  padding: 80px 100px 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 9.38%, rgba(0, 0, 0, 0.8) 28.13%, #000 100%);
+}
+.descript .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.descript .img > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
