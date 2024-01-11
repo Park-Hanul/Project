@@ -89,16 +89,36 @@ input[type=text]{
   .talk{
     width: 100%;
     .talk_box{
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      align-items: baseline;
+      display: none;
       p{
         color: #fff;
         font-size: 30px;
       }
-      .talk_btn{
-        background-color: transparent;
+
+    }
+  }
+  .talk_btn{
+    position: absolute;
+    bottom: 20px; right: 60px;
+    background-color: transparent;
+    font-size: 30px;
+    color: #fff;
+    &::after{
+      content: '';
+      display: inline-block;
+      width: 17px; height: 30px;
+      margin-left: 10px;
+      vertical-align: middle;
+      background-image: url(../images/npc/talk_next.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.step_next{
+      font-size: 0;
+      &::after{
+        width: 120px; height: 50px;
+        background-image: url(../images/npc/step_next.png);
+        background-size: contain;
       }
     }
   }

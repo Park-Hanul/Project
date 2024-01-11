@@ -144,15 +144,37 @@ input[type=text]::placeholder {
   width: 100%;
 }
 .descript .talk .talk_box {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  align-items: baseline;
+  display: none;
 }
 .descript .talk .talk_box p {
   color: #fff;
   font-size: 30px;
 }
-.descript .talk .talk_box .talk_btn {
+.descript .talk_btn {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
   background-color: transparent;
+  font-size: 30px;
+  color: #fff;
+}
+.descript .talk_btn::after {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+  background-image: url(../images/npc/talk_next.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.descript .talk_btn.step_next {
+  font-size: 0;
+}
+.descript .talk_btn.step_next::after {
+  width: 120px;
+  height: 50px;
+  background-image: url(../images/npc/step_next.png);
+  background-size: contain;
 }
